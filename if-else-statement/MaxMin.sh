@@ -1,47 +1,47 @@
 #!/bin/bash -x
 
-n1=$((RANDOM%100+100))
-n2=$((RANDOM%100+100))
-n3=$((RANDOM%100+100))
-n4=$((RANDOM%100+100))
-n5=$((RANDOM%100+100))
+num1=$((RANDOM%100+100))
+num2=$((RANDOM%100+100))
+num3=$((RANDOM%100+100))
+num4=$((RANDOM%100+100))
+num5=$((RANDOM%100+100))
 
-if [ $n1 -gt $n2 ] && [ $n1 -gt $n3 ] && [ $n1 -gt $n4 ] && [ $n1 -gt $n5 ]
+if [ $num1 -gt $num2 ] && [ $num1 -gt $num3 ] && [ $num1 -gt $num4 ] && [ $num1 -gt $num5 ]
 then
-echo "$n1 is Max"
+echo "$num1 is Max"
 
-elif [ $n2 -gt $n3 ] && [ $n2 -gt $n4 ] && [ $n2 -gt $n5 ]
+elif [ $num2 -gt $num3 ] && [ $num2 -gt $num4 ] && [ $num2 -gt $num5 ]
 then
-echo "$n2 is Max"
+echo "$num2 is Max"
 
-elif [ $n3 -gt $n4 ] && [ $n3 -gt $n5 ]
+elif [ $num3 -gt $num4 ] && [ $num3 -gt $num5 ]
 then
-echo "$n3 is Max"
+echo "$num3 is Max"
 
-elif [ $n4 -gt $n5 ]
+elif [ $num4 -gt $num5 ]
 then
-echo "$n4 is Max"
+echo "$num4 is Max"
 
 else
-echo "$n5 is Max"
+echo "$num5 is Max"
 fi
 
-if [ $n1 -lt $n2 ] && [ $n1 -lt $n3 ] && [ $n1 -lt $n4 ] && [ $n1 -lt $n5 ]
+if [ $num1 -lt $num2 ] && [ $num1 -lt $num3 ] && [ $num1 -lt $num4 ] && [ $num1 -lt $num5 ]
 then
-echo "$n1 is Min"
+echo "$num1 is Min"
 
-elif [ $n2 -lt $n3 ] && [ $n2 -lt $n4 ] && [ $n2 -lt $n5 ]
+elif [ $num2 -lt $num3 ] && [ $num2 -lt $num4 ] && [ $num2 -lt $num5 ]
 then
-echo "$n2 is Min"
+echo "$num2 is Min"
 
-elif [ $n3 -lt $n4 ] && [ $n3 -lt $n5 ]
+elif [ $num3 -lt $num4 ] && [ $num3 -lt $num5 ]
 then
-echo "$n3 is Min"
+echo "$num3 is Min"
 
-elif [ $n4 -lt $n5 ]
+elif [ $num4 -lt $num5 ]
 then
-echo "$n4 is Min"
+echo "$num4 is Min"
 
 else
-echo "$n5 is Min"
+echo "$num5 is Min"
 fi
